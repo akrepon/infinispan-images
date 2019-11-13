@@ -66,7 +66,7 @@ YamlEnd
   echo "${identities}" > ${IDENTITIES_PATH}
 fi
 
-java -jar ${ISPN_HOME}/bin/config-generator.jar ${ISPN_HOME}/server/conf ${IDENTITIES_PATH} ${CONFIG_PATH}
+java -jar ${ISPN_HOME}/bin/config-generator.jar ${ISPN_HOME}/server/conf ${IDENTITIES_PATH} ${CONFIG_PATH} ${CACHE_CONFIG_XML}
 
 if [ -n "${DEBUG}" ]; then
   cat ${SERVER_ROOT}/server/conf/*.xml

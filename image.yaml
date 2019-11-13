@@ -38,6 +38,8 @@ envs:
   value: /opt/infinispan
 - name: CONFIG_PATH
   description: The path to the .yaml file which contains all Infinispan related configuration.
+- name: CACHE_CONFIG_XML
+  description: The path to the .xml file which contains all the cache configurations.
 - name: IDENTITIES_PATH
   description: The path to the .yaml file containing all identity information for configuring endpoints.
 - name: USER
